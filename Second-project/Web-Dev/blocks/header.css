@@ -1,0 +1,52 @@
+.header__title {
+  font-size: 66px;
+  line-height: 76px;
+  font-weight: 500;
+  margin: 150px 0 0;
+  max-width: 544px;
+}
+
+.header__description {
+  font-size: 20px;
+  line-height: 30px;
+  margin: 32px 0 0;
+  max-width: 465px;
+}
+
+.header__image {
+  /* Write styles here */
+  max-width: 636px;
+  z-index: 1;
+  display: block;
+  margin: 0px auto;
+  top: 135px;
+  right: 20px;
+  position: absolute;
+}
+
+.header__footer {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 40px 80px 0;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  color: #1f69c9;
+}
+/* Add the hover state styles for .header__link here */
+
+.header__address {
+  margin: 0;
+  color: #838383;
+}
