@@ -1,0 +1,8 @@
+.logo {
+  position: absolute;
+  width: 125px;
+  height: 142px;
+  top: 30px;
+  left: 30px;
+  background-image: url("../images/background_header.svg");
+}
