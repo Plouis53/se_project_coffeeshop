@@ -1,0 +1,50 @@
+.menu {
+  background-image: url(./images/background_menu.svg);
+  background-color: #0a2750;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 100px;
+  box-sizing: border-box;
+}
+.menu__title {
+  max-width: 780px;
+  margin-top: 100px;
+  margin-bottom: 24px;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  color: #fff;
+  text-align: center;
+}
+.menu__subtitle {
+  max-width: 780px;
+  margin-top: 24px;
+  margin-bottom: 100px;
+  font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  margin: auto;
+  bottom: 100px;
+}
+.menu__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  gap: 100px;
+  max-width: 680px;
+}
