@@ -27,20 +27,12 @@
             alt="Practicum library Logo"
             class="logo"
           />
-          <ul class="nav__links">
-            <li>
-              <a class="nav__link" href="#menu">Menu</a>
-            </li>
-            <li>
-              <a class="nav__link" href="#recipes">Recipes</a>
-            </li>
-            <li>
-              <a class="nav__link" href="#book-a-table">Book a table</a>
-            </li>
-            <li>
-              <a class="nav__link" href="#contacts">Contacts</a>
-            </li>
-          </ul>
+          <div class="nav__links">
+            <a class="nav__link" href="#menu">Menu</a>
+            <a class="nav__link" href="#recipes">Recipes</a>
+            <a class="nav__link" href="#book-a-table">Book a table</a>
+            <a class="nav__link" href="#contacts">Contacts</a>
+          </div>
         </nav>
         <h1 class="header__title">
           <span class="span__accent">Speciality coffee</span>
@@ -56,11 +48,11 @@
           class="header__image"
         />
         <div class="header__footer">
-          <ul class="header__hours">
-            Hours:
-            <li class="header__hours">Monday – Friday (10:00 – 19:00)</li>
-            <li class="header__hours">Saturday – Sunday (11:00 – 18:00)</li>
-          </ul>
+          <div class="header__hours">
+            <p class="Header__Hours">Hours:</p>
+            <p class="Header__Hours">Monday – Friday (10:00 – 19:00)</p>
+            <p class="Header__Hours">Saturday – Sunday (11:00 – 18:00)</p>
+          </div>
           <div class="header__address">
             <p class="header__address">
               200 Success Avenue, The Town of Practicum
@@ -75,15 +67,12 @@
             We brew coffee from locally roasted, Fairtrade certified beans and
             use biodegradable cups. All teas from our collection are $2/cup.
           </p>
-          <ul class="cards">
+          <div class="cards">
             <div class="menu__cards">
-              <ul class="card__title">
-                Filter
-                <li class="card__list-item">
-                  Regular (12 oz)
-                  <hr class="card__list-divider" />
-                  $1
-                </li>
+              <p class="card__title"> Filter</p>
+                <p class="card__list-item"> Regular (12 oz)
+                  <div class="card__list-divider"> $1
+                </p>
                 <li class="card__list-item">
                   Large (16 oz)
                   <hr class="card__list-divider" />
@@ -286,7 +275,7 @@
         </section>
       </main>
       <footer class="footer">
-        <div class="footer__content" id="contacts">
+        <div class="footer__contents" id="contacts">
           <img
             class="footer__logo"
             src="../images/practicum_logo.svg"
