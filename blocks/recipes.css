@@ -1,5 +1,5 @@
 .recipes {
-  background-image: url(./images/background_recipes.svg);
+  background-image: url(/images/background_recipes.svg);
   background-color: #ffffff;
   background-position: center;
   background-repeat: no-repeat;
@@ -7,6 +7,8 @@
   padding-left: 80px;
   padding-top: 100px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .recipes__image {

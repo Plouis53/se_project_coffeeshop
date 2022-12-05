@@ -59,33 +59,38 @@
   color: #2f80ed;
 }
 .header__title {
-  margin-top: 202px;
-  margin-left: 80px;
+  display: flex;
+  color: black;
   max-width: 729px;
-  margin-bottom: 28px;
+  margin: 202px 0 0 80px;
+  flex-direction: column;
+  font-family: Inter, Arial, sans-serif;
+  font-style: normal;
   font-weight: 500;
   font-size: 60px;
   line-height: 72px;
   z-index: 0;
+  margin-left: 0px;
 }
 
-.header__span-accent {
-  display: block;
-  font-family: "Noto Serif";
+.span__accent {
+  font-family: "Noto serif", "Times New Roman", serif;
   font-style: italic;
+  font-weight: normal;
   font-size: 60px;
   line-height: 72px;
+  color: #2f80ed;
   display: block;
 }
 
 .header__description {
-  margin-bottom: 202px;
-  font-family: "Noto Serif";
+  max-width: 683px;
+  font-family: "Noto serif", "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  max-width: 683px;
+  margin-bottom: 202px;
 }
 
 .header__image {
@@ -97,21 +102,22 @@
   z-index: -1;
 }
 
-.header__paragraph {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #6f6f6f;
-}
-
 .header__hours {
   position: absolute;
   left: 80px;
   bottom: 40px;
   list-style: none;
   padding: 0;
+}
+
+.header__paragraph {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__footer {
@@ -121,6 +127,17 @@
   margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
+}
+
+.menu {
+  background-image: url(/images/background_menu.svg);
+  background-color: #0a2750;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 100px;
+  box-sizing: border-box;
 }
 
 .menu__title {
@@ -150,6 +167,13 @@
   margin-bottom: 100px;
   max-width: 680px;
   margin-right: 100px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  gap: 100px;
 }
 
 .cards {
@@ -181,7 +205,7 @@
 }
 
 .recipes {
-  background-image: url(images/background_recipes.svg);
+  background-image: url(/images/background_recipes.svg);
   background-color: #ffffff;
   background-position: center;
   background-repeat: no-repeat;
@@ -217,6 +241,7 @@
   display: flex;
   margin-bottom: 215px;
 }
+
 .iframe__video {
   display: flex;
   gap: 40px;
@@ -435,7 +460,7 @@
 }
 
 .footer__copyright {
-  margin: 0;
+  margin: 108px 0 0;
   font-size: 16px;
   line-height: 20px;
 }
