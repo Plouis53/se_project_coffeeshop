@@ -1,6 +1,13 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
+  max-width: 600px;
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .card__title {
@@ -17,11 +24,12 @@
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 16px;
-  display: flex;
   justify-content: center;
+  display: flex;
 }
 
 .card__list-divider {
   display: flex;
   flex-grow: 1;
+  align-items: baseline;
 }
