@@ -151,14 +151,15 @@
 .menu__title {
   font-family: Inter;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 44px;
   line-height: 52px;
   max-width: 780px;
-  margin-top: 100px;
+  margin-top: -110px;
   margin-bottom: 24px;
   justify-content: center;
   text-align: center;
+  padding: 40px;
 }
 
 .menu__subtitle {
@@ -167,8 +168,8 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  justify-content: center;
-  margin-top: 0;
+  margin-top: -40px;
+  text-indent: -45px;
 }
 
 .card {
@@ -210,6 +211,9 @@
 }
 
 .card__list {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
 
 .card__list-item {
@@ -264,6 +268,9 @@
 
 .videos {
   display: flex;
+  margin: auto;
+  column-gap: 24px;
+  flex-basis: 40px;
   margin-bottom: 215px;
 }
 
