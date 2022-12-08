@@ -174,9 +174,8 @@
             Check out some recipes we've collected for your home-brewing
             convenience:
           </p>
-          <div class="videos">
-            <ul class="iframe__video">
-              <li class="iframe__video iframe__video-caption">
+            <ul class="recipes__videos">
+              <li class="recipes__video-item">
                 <iframe
                 class="recipes__iframe"
                  width="480"
@@ -186,27 +185,29 @@
                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                  allowfullscreen>
                 </iframe>
-            <p class="iframe__video-caption">Aeropress recipe ~5 min</p>
+            <p class="recipes__video-caption"><span> Aeropress recipe</span> <span>~5 min</span> 
+            </p>
             </li>
-            <li class="iframe__video iframe__video-caption">
+            <li class="recipes__video-item">
               <iframe 
-              class="iframe__recipes"
+              class="recipes__iframe"
               width="480"
               height="273"
               src="https://www.youtube.com/embed/st571DYYTR8"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-            <p class="iframe__video-caption"> French press recipe ~15 min</p>
+              allowfullscreen>
+            </iframe>
+            <p class="recipes__video-caption"><span> French press recipe</span> <span>~15 min</span>
+            </p>
           </li>
         </ul>
         </section>
         <section class="reservation" id="book a table">
           <h2 class="reservation__title">Book a table</h2>
-          <div class="reservation__form">
-            <form class="form__fieldset">
-              <div class="form__label" for="name">Name *</div>
+          <form class="reservation__form form">
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="name">Name *</label>
               <input
                 class="form__input"
                 type="text"
@@ -214,50 +215,44 @@
                 placeholder="Name Surname"
                 required
               />
-              <div class="form__label" for="input-number">
-                Number of guests *
-              </div>
+              <label class="form__label" for="guests">Number of guests*</label>
               <input
                 class="form__input"
                 type="number"
                 form="form__input"
-                input
-                id="input-number"
+                id="guests"
                 placeholder="1-8"
                 min="1"
-                max="8"
+                max="0"
                 required
               />
-              <div class="form__label" for="input-date">Data & time *</div>
+              <label class="form__label" for="date-time">Data & time*</label>
               <input
                 class="form__input"
                 type="datetime-local"
                 form="form__input"
-                input-id="input-date"
+                id="date-and-time"
                 placeholder="mm/dd/yyyy --:--"
                 required
               />
-              <div class="form__label" for="input-email">Your email *</div>
+              <label class="form__label" for="Your email">Your email*</label>
               <input
                 class="form__input"
                 type="email"
-                input
                 id="input-email"
                 placeholder="email@email.com"
                 required
               />
-              <button type="submit" class="form__button">Book a table</button>
-
+            </fieldset>
+            <fieldset type="button" class="form__button">Book a table</fieldset>
+              <label class="form__terms" for="tos"> I agree with the terms of use</label>
               <input
-                class="form__input_checkbox"
+                class="form__checkbox"
                 type="checkbox"
-                input
-                id="input-checkbox"
+                name="terms-of-use"
+                id="terms-of-use"
               />
-
-              <label for="form__input_checkbox" class="form__input_checkbox">
-                I agree with the terms of use
-              </label>
+            </fieldset>
             </form>
           </div>
         </section>

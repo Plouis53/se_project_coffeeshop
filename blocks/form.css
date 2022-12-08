@@ -2,6 +2,11 @@
   margin: 0 auto 120px auto;
   max-width: 385px;
 }
+
+.form__fieldset {
+  max-width: 385px;
+}
+
 .form__label {
   font-weight: 500;
   font-size: 16px;
@@ -19,6 +24,12 @@
   height: 60px;
   font-size: 20px;
   line-height: 30px;
+}
+
+.form__input_date {
+}
+
+.form__input {
 }
 
 .form__input::placeholder {
@@ -40,6 +51,7 @@
 .form__button:hover {
   opacity: 0.7;
 }
+
 .form__checkbox {
   margin: 0 12px 0 auto;
   border-radius: 2px;

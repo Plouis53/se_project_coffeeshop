@@ -178,18 +178,15 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
-  margin-right: 100px;
   color: #fff;
   flex-basis: 550px;
   align-items: center;
   max-width: 600px;
-  flex-wrap: wrap;
 }
 
 .menu__cards {
   display: flex;
   flex-wrap: wrap;
-  display: flex;
   margin-bottom: 100px;
   margin-left: 0;
   margin-right: 0;
@@ -201,13 +198,13 @@
 
 .card__title {
   font-family: Inter;
-  font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
   color: #fff;
   list-style: none;
   margin-bottom: 32px;
+  margin-top: 0;
 }
 
 .card__list {
@@ -218,9 +215,8 @@
 
 .card__list-item {
   font-family: Noto Serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
+  font-weight: normal;
   line-height: 20px;
   margin-bottom: 16px;
   justify-content: center;
@@ -242,6 +238,7 @@
   padding-left: 80px;
   padding-top: 100px;
   box-sizing: border-box;
+  padding: 100px 80px 140px;
 }
 
 .recipes__image {
@@ -253,8 +250,12 @@
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
+  font-family: "Inter", serif;
   max-width: 580px;
-  margin-bottom: 24px;
+}
+
+.recipes__video-item {
+  width: 480px;
 }
 
 .recipes__subtitle {
@@ -264,56 +265,150 @@
   line-height: 30px;
   margin-bottom: 80px;
   max-width: 438px;
+  margin-top: 0;
 }
 
-.videos {
+.recipes__iframe {
+  width: 100%;
+  height: 270px;
+  border: none;
+  position: relative;
+  z-index: 1;
+  background-color: #ccc;
+}
+
+.recipes__video-caption {
+  margin: 24px 0;
   display: flex;
-  margin: auto;
-  column-gap: 24px;
-  flex-basis: 40px;
-  margin-bottom: 215px;
-}
-
-.iframe__video {
-  display: flex;
-  gap: 40px;
-  width: 480px;
-  height: 273px;
-  margin-bottom: 24px;
-}
-
-.iframe__video-caption {
-  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter", serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+  list-style: none;
+  margin-bottom: 215;
+}
+
+.recipes__videos {
   display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 80px 0 0;
+  padding: 0;
+  column-gap: 80px;
   flex-wrap: wrap;
 }
 
 .reservation {
-  background-image: url(images/background_reservation.svg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #d9e7ff;
+  background-image: url(images/background_reservation.svg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
-  padding-top: 100px;
-  padding-bottom: 120px;
-  box-sizing: border-box;
+  background-size: cover;
 }
 
 .reservation__title {
-  font-weight: 500;
   font-size: 44px;
+  font-weight: 500px;
   line-height: 52px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-bottom: 80px;
+  justify-content: center;
+  display: flex;
+  margin-top: 100px;
 }
 
 .reservation__form {
   display: flex;
   justify-content: center;
+}
+
+.form {
+  margin: 0 auto 120px auto;
+  max-width: 385px;
+  background-color: #2f80ed;
+  background-image: url(/images/check.svg);
+}
+
+.form__fieldset {
+  max-width: 385px;
+}
+
+.form__label:last-of-type {
+  display: flex;
+  justify-content: center;
+}
+
+.form__label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
+  display: flex;
+  color: black;
+}
+
+.form__input {
+  box-sizing: border-box;
+  width: 385px;
+  border-radius: 4px;
+  border: 0;
+  margin: 0 auto 32px auto;
+  height: 60px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.form__input_date {
+}
+
+.form__input {
+}
+
+.form__label::placeholder {
+  font-size: 20px;
+  line-height: 30px;
+  color: #838383;
+}
+
+.form__button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #2f80ed;
+  color: #fff;
+  height: 60px;
+  width: 385px;
+}
+
+.form__button:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.form__checkbox {
+  margin: 0 12px 0 auto;
+  border-radius: 2px;
+  height: 20px;
+  width: 20px;
+  background-color: #2f80ed;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 88px;
+}
+
+.form__terms {
+  display: flex;
+  margin-top: 32px;
+  padding-bottom: 120px;
+  justify-content: center;
+  align-items: center;
 }
 
 .about {
@@ -360,76 +455,6 @@
   z-index: 0;
 }
 
-.form {
-  margin: 0 auto 120px auto;
-  max-width: 385px;
-}
-
-.form__fieldset {
-  max-width: 385px;
-}
-
-.form__label {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 8px;
-  display: flex;
-}
-
-.form__input {
-  box-sizing: border-box;
-  width: 385px;
-  border-radius: 4px;
-  border: 0;
-  margin: 0 auto 32px auto;
-  height: 60px;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.form__input_date {
-}
-
-.form__input {
-}
-
-.form__input::placeholder {
-  font-size: 20px;
-  line-height: 30px;
-  color: #838383;
-}
-
-.form__button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  background-color: #2f80ed;
-  color: #fff;
-  height: 60px;
-  width: 385px;
-}
-
-.form__button:hover {
-  opacity: 0.7;
-}
-
-.form__checkbox {
-  margin: 0 12px 0 auto;
-  border-radius: 2px;
-  height: 20px;
-  width: 20px;
-  background-color: #2f80ed;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.form__label-checkbox {
-  display: flex;
-  justify-content: center;
-}
-
 .footer {
   background: linear-gradient(180deg, #0a2850 0%, #071931 100%);
   box-sizing: border-box;
@@ -437,20 +462,18 @@
   padding: 60px 100px 60px 80px;
 }
 
-.footer__contents {
+.footer__content {
   display: flex;
   flex-direction: column;
 }
-
-.footer__content {
-}
-
 .footer__logo {
   width: 116px;
   height: 21px;
 }
+.footer__contents {
+}
 
-.footer__content_type_social-heading {
+.footer__social-heading {
   margin: 0 0 20px;
   font-weight: bold;
   font-size: 16px;
@@ -459,17 +482,22 @@
 
 .footer__list {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .footer__list-item {
   margin-bottom: 16px;
   margin-left: 100px;
 }
-
 .footer__list-item:last-of-type {
   margin-bottom: 0;
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
 
 .footer__social-link {
@@ -485,14 +513,6 @@
   color: #c1c1c1;
 }
 
-.footer__social-icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-}
-
 .footer__copyright {
-  margin: 108px 0 0;
-  font-size: 16px;
-  line-height: 20px;
+  margin: 0;
 }
