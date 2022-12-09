@@ -17,7 +17,7 @@
 }
 
 .menu__title {
-  font-family: Inter;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 44px;
@@ -31,7 +31,7 @@
 }
 
 .menu__subtitle {
-  font-family: Noto Serif;
+  font-family: "Serif";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -43,11 +43,12 @@
 .menu__cards {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 100px;
   margin-left: 0;
   margin-right: 0;
   gap: 40px;
-  padding-left: 0;
   width: 100%;
   justify-content: center;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
