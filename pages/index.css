@@ -103,9 +103,6 @@
 }
 
 .header__hours {
-  position: absolute;
-  left: 80px;
-  bottom: 40px;
   list-style: none;
   padding: 0;
 }
@@ -127,7 +124,14 @@
   display: flex;
   justify-content: space-between;
   padding-top: 45px;
-  float: right;
+  align-items: flex-end;
+  position: absolute;
+  left: 0px;
+  padding-left: 80px;
+  padding-right: 80px;
+  bottom: 40px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .menu {
@@ -151,7 +155,7 @@
 .menu__title {
   font-family: Inter;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 44px;
   line-height: 52px;
   max-width: 780px;
@@ -306,7 +310,7 @@
   justify-content: center;
   align-items: center;
   background-color: #d9e7ff;
-  background-image: url(images/background_reservation.svg);
+  background-image: url(/images/2-background_reservation.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -316,7 +320,7 @@
   font-family: "Inter";
   font-style: normal;
   font-size: 44px;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 52px;
   margin-bottom: 80px;
   justify-content: center;
@@ -341,6 +345,9 @@
 .form__fieldset {
   max-width: 385px;
   color: #838383;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .form__label:last-of-type {
@@ -405,7 +412,7 @@
 }
 
 .form__checkbox {
-  margin: 0 12px 0 auto;
+  margin: 0 12px 0 0;
   border-radius: 2px;
   height: 20px;
   width: 20px;
@@ -443,6 +450,7 @@
   position: relative;
   box-sizing: border-box;
   display: flex;
+  justify-content: space-between;
 }
 
 .about__content {
