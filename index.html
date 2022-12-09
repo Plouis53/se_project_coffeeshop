@@ -226,16 +226,16 @@
                 max="8"
                 required
               />
-              <label class="form__label" for="date-time">Data & time*</label>
+              <label class="form__label" for="date-time">Date & time*</label>
               <input
                 class="form__input"
                 type="datetime-local"
                 form="form__input"
-                id="date-and-time"
+                id="date-time"
                 placeholder="mm/dd/yyyy --:--"
                 required
               />
-              <label class="form__label" for="Your email">Your email*</label>
+              <label class="form__label" for="Your-email">Your email*</label>
               <input
                 class="form__input"
                 type="email"
@@ -244,20 +244,19 @@
                 required
               />
             </fieldset>
-            <fieldset type="button" class="form__button">
-              <fieldset>
-                <button>Book a table</button>
-              </fieldset>
-              <label class="form__terms"> I agree with the terms of use</label>
+            <fieldset>
+              <button class="form__button" type="button">Book a table</button>
+            </fieldset>
+              <label class="form__terms">
               <input
                 class="form__checkbox"
                 type="checkbox"
                 name="terms-of-use"
                 id="terms-of-use"
               />
-            </fieldset>
+              I agree with the terms of use
+          </label>
             </form>
-          </div>
         </section>
         <section class="about" id="contacts">
           <h2 class="about__title">About the coffee shop</h2>
@@ -275,6 +274,7 @@
               cups!
             </p>
             <div class="about__circle"></div>
+            <div class="about__circle about__circle_animation_blurred"></div>
           </div>
         </section>
       </main>

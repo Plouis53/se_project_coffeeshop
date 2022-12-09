@@ -313,10 +313,11 @@
 }
 
 .reservation__title {
+  font-family: "Inter";
+  font-style: normal;
   font-size: 44px;
   font-weight: 500px;
   line-height: 52px;
-  text-align: center;
   margin-bottom: 80px;
   justify-content: center;
   display: flex;
@@ -324,19 +325,22 @@
 }
 
 .reservation__form {
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  border-style: none;
 }
 
 .form {
   margin: 0 auto 120px auto;
   max-width: 385px;
-  background-color: #2f80ed;
-  background-image: url(/images/check.svg);
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
 }
 
 .form__fieldset {
   max-width: 385px;
+  color: #838383;
 }
 
 .form__label:last-of-type {
@@ -345,42 +349,51 @@
 }
 
 .form__label {
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  margin-top: 0;
   margin-bottom: 8px;
   display: flex;
   color: black;
+  flex-direction: column;
 }
 
 .form__input {
   box-sizing: border-box;
   width: 385px;
   border-radius: 4px;
+  border: 1px solid #838383;
   border: 0;
   margin: 0 auto 32px auto;
   height: 60px;
+  font-family: "Inter";
   font-size: 20px;
   line-height: 30px;
-}
-
-.form__input_date {
-}
-
-.form__input {
+  margin-left: auto;
+  justify-content: center;
 }
 
 .form__label::placeholder {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
   font-size: 20px;
   line-height: 30px;
   color: #838383;
 }
 
 .form__button {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   background-color: #2f80ed;
+  border-radius: 4px;
+  border: 0 none;
   color: #fff;
   height: 60px;
   width: 385px;
@@ -396,19 +409,29 @@
   border-radius: 2px;
   height: 20px;
   width: 20px;
-  background-color: #2f80ed;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  padding: 88px;
+  background-color: #2f80ed;
 }
 
 .form__terms {
   display: flex;
-  margin-top: 32px;
-  padding-bottom: 120px;
   justify-content: center;
-  align-items: center;
+  margin-top: 32px;
+}
+
+@keyframes pulsate {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
 }
 
 .about {
@@ -426,7 +449,12 @@
   max-width: 660px;
   margin-top: 119px;
   margin-bottom: 173px;
-  margin-top: 119px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  line-height: 20px;
+  margin-left: 128px;
+  gap: 20px;
 }
 
 .about__title {
@@ -436,12 +464,16 @@
   max-width: 251px;
   margin-top: 100px;
   z-index: 1;
+  padding-left: 30px;
 }
 
 .about__paragraph {
   font-family: "Noto Serif", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 20px;
   line-height: 30px;
+  margin: 0;
 }
 
 .about__circle {
@@ -455,6 +487,10 @@
   z-index: 0;
 }
 
+.about__circle_animation_blurred {
+  animation: pulsate 1.3s ease-in-out 0s infinite;
+}
+
 .footer {
   background: linear-gradient(180deg, #0a2850 0%, #071931 100%);
   box-sizing: border-box;
@@ -465,25 +501,28 @@
 .footer__content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .footer__logo {
   width: 116px;
   height: 21px;
 }
-.footer__contents {
-}
 
 .footer__social-heading {
   margin: 0 0 20px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
+  text-align: right;
 }
 
 .footer__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-left: auto;
 }
 
 .footer__list-item {
@@ -502,6 +541,9 @@
 
 .footer__social-link {
   color: #fff;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
@@ -511,8 +553,14 @@
 
 .footer__social-link:hover {
   color: #c1c1c1;
+  transition: 0.3s;
 }
 
 .footer__copyright {
-  margin: 0;
+  margin: 108px 0 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
 }
