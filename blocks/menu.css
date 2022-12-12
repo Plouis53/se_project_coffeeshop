@@ -30,10 +30,11 @@
 }
 
 .menu__subtitle {
-  font-family: "Serif";
+  font-family: "Noto Serif";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
+  line-height: 30px;
   max-width: 780px;
   text-align: center;
   display: flex;
@@ -42,7 +43,6 @@
   margin: auto;
   margin-bottom: 100px;
   text-indent: -45px;
-  line-height: 30px;
 }
 
 .menu__cards {
