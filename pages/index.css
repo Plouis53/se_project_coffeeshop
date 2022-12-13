@@ -2,7 +2,7 @@
 
 @import url(../blocks/about.css);
 
-@import url(../blocks/cards.css);
+@import url(../blocks/card.css);
 
 @import url(../blocks/font.css);
 
@@ -23,5 +23,3 @@
 @import url(../blocks/recipes.css);
 
 @import url(../blocks/reservation.css);
-
-@import url(../pages/index.css);
