@@ -35,7 +35,7 @@
 }
 
 .about__title {
-  font-family: "Inter", "arial", serif;
+  font-family: "Inter", "arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 44px;

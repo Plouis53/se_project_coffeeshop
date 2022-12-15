@@ -14,7 +14,7 @@
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
-  font-family: "Inter", "Arial", serif;
+  font-family: "Inter", "Arial", sans-serif;
   max-width: 580px;
 }
 
@@ -45,7 +45,7 @@
 .recipes__video-caption {
   display: flex;
   justify-content: space-between;
-  font-family: "Inter", "Arial", serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
